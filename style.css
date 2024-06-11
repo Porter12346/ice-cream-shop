@@ -4,3 +4,7 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.order-page {
+    height: 100%;
+}
