@@ -1,4 +1,6 @@
 .card-img {
     height: 100%;
     width: 10em;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }

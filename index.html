@@ -28,8 +28,8 @@
             <div class="row">
                 <div class="col-4 ">
                     <div class="bg-light">
-                        <h1 class="m-2">Your Order</h1>
-                        <div id="order-list"></div>
+                        <h1 class="m-2 p-2">Your Order</h1>
+                        <div id="order-list" class="m-3"></div>
                     </div>
                 </div>
                 <div class="col-8 d-flex flex-column">
@@ -38,7 +38,7 @@
                         <div class="d-flex justify-content-around">
                             <div class="d-flex bg-secondary p-2 m-2">
                                 <img class="card-img"
-                                    src="https://images.unsplash.com/photo-1469428946640-844b286ebf50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="https://images.unsplash.com/photo-1549395156-e0c1fe6fc7a5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
                                     <h4>Vanilla</h4>
@@ -62,7 +62,7 @@
 
                             <div class="d-flex bg-secondary p-2 m-2">
                                 <img class="card-img"
-                                    src="https://images.unsplash.com/photo-1469428946640-844b286ebf50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="https://www.occasionallyeggs.com/wp-content/uploads/2021/03/Vegan-Cookie-Dough-Ice-Cream-500x750.jpg"
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
                                     <h4>Cookie Dough</h4>
@@ -82,33 +82,34 @@
                                     src="https://images.unsplash.com/photo-1585503100597-d70e5dc45d81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
-                                    <h4>Vanilla</h4>
-                                    <p>$1.50</p>
-                                    <button onclick="addToOrder('Vanilla')" class="btn btn-light mdi mdi-cart-plus"> Add
+                                    <h4>Chocolate Chips</h4>
+                                    <p>$0.25</p>
+                                    <button onclick="addToOrder('Chocolate Chips')"
+                                        class="btn btn-light mdi mdi-cart-plus"> Add
                                         to order</button>
                                 </div>
                             </div>
 
                             <div class="d-flex bg-secondary p-2 m-2">
                                 <img class="card-img"
-                                    src="https://images.unsplash.com/photo-1585503100597-d70e5dc45d81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="https://nuts.com/images/rackcdn/ed910ae2d60f0d25bcb8-80550f96b5feb12604f4f720bfefb46d.ssl.cf1.rackcdn.com/6a84646656a4ecd3-YVc6_0vn-zoom.jpg"
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
-                                    <h4>Chocolate</h4>
-                                    <p>$2.00</p>
-                                    <button onclick="addToOrder('Chocolate')" class="btn btn-light mdi mdi-cart-plus">
+                                    <h4>Sprinkles</h4>
+                                    <p>$0.25</p>
+                                    <button onclick="addToOrder('Sprinkles')" class="btn btn-light mdi mdi-cart-plus">
                                         Add to order</button>
                                 </div>
                             </div>
 
                             <div class="d-flex bg-secondary p-2 m-2">
                                 <img class="card-img"
-                                    src="https://images.unsplash.com/photo-1585503100597-d70e5dc45d81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    src="https://drryor7280ntb.cloudfront.net/media/catalog/product/1/0/10019320029391_jnkyqeh5y6q7mr63.jpg?width=1200&height=1200&quality=85&fit=bounds"
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
-                                    <h4>Cookie Dough</h4>
-                                    <p>$2.25</p>
-                                    <button onclick="addToOrder('Cookie Dough')"
+                                    <h4>Cookie Chunks</h4>
+                                    <p>$0.50</p>
+                                    <button onclick="addToOrder('Cookie Chunks')"
                                         class="btn btn-light mdi mdi-cart-plus"> Add to order</button>
                                 </div>
                             </div>
@@ -124,8 +125,9 @@
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
                                     <h4>Waffle Cone</h4>
-                                    <p>$1.50</p>
-                                    <button onclick="addToOrder('Vanilla')" class="btn btn-light mdi mdi-cart-plus"> Add
+                                    <p>$1.00</p>
+                                    <button onclick="addToOrder('Waffle Cone')" class="btn btn-light mdi mdi-cart-plus">
+                                        Add
                                         to order</button>
                                 </div>
                             </div>
@@ -136,8 +138,8 @@
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
                                     <h4>Sugar Cone</h4>
-                                    <p>$2.00</p>
-                                    <button onclick="addToOrder('Chocolate')" class="btn btn-light mdi mdi-cart-plus">
+                                    <p>$0.50</p>
+                                    <button onclick="addToOrder('Sugar Cone')" class="btn btn-light mdi mdi-cart-plus">
                                         Add to order</button>
                                 </div>
                             </div>
@@ -148,9 +150,9 @@
                                     alt="ice cream">
                                 <div class="align-items-center justify-content-center d-flex flex-column mx-3">
                                     <h4>Cake Cone</h4>
-                                    <p>$2.25</p>
-                                    <button onclick="addToOrder('Cookie Dough')"
-                                        class="btn btn-light mdi mdi-cart-plus"> Add to order</button>
+                                    <p>$0.25</p>
+                                    <button onclick="addToOrder('Cake Cone')" class="btn btn-light mdi mdi-cart-plus">
+                                        Add to order</button>
                                 </div>
                             </div>
 

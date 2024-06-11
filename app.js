@@ -32,17 +32,17 @@ const toppings = [{
 }]
 
 const cones = [{
-    name: 'Sugar',
+    name: 'Sugar Cone',
     quantity: 0,
     price: .5
 },
 {
-    name: 'Waffle',
+    name: 'Waffle Cone',
     price: 1.0,
     quantity: 0
 },
 {
-    name: 'Cake',
+    name: 'Cake Cone',
     price: .25,
     quantity: 0
 }]
@@ -88,7 +88,7 @@ function drawOrder() {
         let subMenu = menu[i]
         for (let j = 0; j < subMenu.length; j++) {
             let itemIndex = subMenu[j]
-            if (itemIndex.quantity != 0) {
+            if (itemIndex.quantity > 0) {
                 let itemTotal = itemIndex.price * itemIndex.quantity
                 htmlInject += `<p>Item: ${itemIndex.name} Quantity: ${itemIndex.quantity} Total: $${itemTotal.toFixed(2)}</p>`
                 console.log(htmlInject)
@@ -97,6 +97,6 @@ function drawOrder() {
     }
     orderTab.innerHTML = htmlInject
     let total = calculateTotal()
-    orderTab.innerHTML += `<p>Total: $${total.toFixed(2)}</p>`
+    orderTab.innerHTML += `<p class="fs-5 fw-bold">Total: $${total.toFixed(2)}</p>`
 
 }
